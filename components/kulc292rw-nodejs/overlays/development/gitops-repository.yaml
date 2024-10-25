@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: kulc292rw-nodejs-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/kulc292rw-nodejs-gitops

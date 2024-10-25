@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kulc292rw-nodejs-gitops
+  description: This is GitOps manifest for kulc292rw-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: kulc292rw-nodejs
+    janus-idp.io/tekton: kulc292rw-nodejs
+    backstage.io/kubernetes-id: kulc292rw-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:kulc292rw-nodejs
